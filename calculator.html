@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<style>
+    *{margin: 0;
+    padding: 0;
+    }
+
+    .container{
+        width: 450px;
+        height: 650px;
+        background-color: #0b1957;
+        text-align: center;
+        margin:auto;
+    }
+
+.calculator {
+    position: relative;
+    top: 15px; 
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.text {
+    position: relative;
+    margin-bottom: 20px;
+    height: 190px;
+    width: 500px;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #d6e0f5;
+}
+
+.calcButtons {
+    flex-wrap: wrap;
+}
+
+button {
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.operator {
+    background-color: #d6e0f5;
+}
+
+.number {
+    background-color: rgb(142, 192, 248);
+}
+
+.calcButtons > button:nth-child(1) {
+
+    background-color: rgb(48, 150, 116);
+    width: 100px;
+    height: 100px;
+}
+
+input{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 50px;
+}
+
+.calcButtons > button:nth-child(18){
+    width: 320px;
+}
+
+.number:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.operator:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="calculator">
+
+        <input type="text" id="layar">
+    
+        <div class="calcButtons">
+        
+    
+            
+            <button class="operator" id="hapus">AC</button>
+            <button class="operator" id="clear">DEL</button>
+            <button class="operator" id="kali">x</button>
+            <button class="operator" id="tambah">+</button>
+            <button class="number" id="satu">1</button>
+            <button class="number" id="dua">2</button>
+            <button class="number" id="tiga">3</button>
+            <button class="operator" id="bagi">/</button>
+            <button class="number" id="empat">4</button>
+            <button class="number" id="lima">5</button>
+            <button class="number" id="enam">6</button>
+
+            <button class="operator" id="kurang">-</button>
+            <button class="number" id="tujuh">7</button>
+            <button class="number" id="delapan">8</button>
+            <button class="number" id="sembilan">9</button>
+
+            <button class="number" id="nol">0</button>
+
+            <button class="operator" id="titik">.</button>
+            <button class="operator" id="samadengan">=</button>
+
+    
+        </div>
+        </div>
+        </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
